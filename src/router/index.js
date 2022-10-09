@@ -45,6 +45,12 @@ const routes = [
     name: 'answer',
     component: () => import('../views/teacher/Answer.vue'),
     meta: { title: '我来回答' }
+  },
+  {
+    path: '/answerMy',
+    name: 'answerMy',
+    component: () => import('../views/teacher/AnswerMy.vue'),
+    meta: { title: '我的答疑' }
   }
 ]
 
