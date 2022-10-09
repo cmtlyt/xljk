@@ -51,7 +51,7 @@ export default {
       username: "张老师",
       messageTotal: "",
       gridList: [
-        { text: "咨询预约设置", icon: "chat-o", to: "" },
+        { text: "咨询预约设置", icon: "chat-o", to: "/evanuateSetting" },
         { text: "预约记录", icon: "todo-list-o", to: "/bookingHistory" },
         { text: "心理答疑", icon: "question-o", to: "/answerList" },
         { text: "我的答疑", icon: "comment-o", to: "/answerMy" },

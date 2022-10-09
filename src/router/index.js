@@ -64,7 +64,12 @@ const routes = [
     name: 'infoSetting',
     component: () => import('../views/teacher/InfoSetting.vue'),
     meta: { title: '信息设置' }
-  }
+  }, {
+    path: '/evanuateSetting',
+    name: 'evanuateSetting',
+    component: () => import('../views/teacher/EvanuateSetting.vue'),
+    meta: { title: '咨询预约设置' }
+  },
 ]
 
 const router = new VueRouter({
