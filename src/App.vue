@@ -35,7 +35,8 @@ nav {
 
 header,
 main,
-footer {
+footer,
+section {
   box-sizing: border-box;
   display: block;
   width: 100%;

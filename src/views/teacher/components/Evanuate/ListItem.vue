@@ -7,7 +7,7 @@
           fit="cover"
           width="50"
           height="50"
-          :src="src || 'https://img01.yzcdn.cn/vant/cat.jpeg'"
+          :src="role.src || 'https://img01.yzcdn.cn/vant/cat.jpeg'"
         />
         <span>{{ role.name }}</span>
       </div>
@@ -86,7 +86,7 @@ export default {
     padding-top: 2rem;
     font-size: $desc-font-size;
     text-align: left;
-    .answer-content{
+    .answer-content {
       margin-top: 2rem;
       padding: 2rem 0;
       border-top: #00000020 solid 1px;

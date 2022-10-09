@@ -4,8 +4,9 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const routes = [
+  { path: '/', redirect: '/tracher' },
   {
-    path: '/',
+    path: '/teacher',
     name: 'teacher',
     component: () => import('../views/teacher/Index.vue'),
     meta: { title: '教师端主页' }
@@ -56,7 +57,13 @@ const routes = [
     path: '/evanuateList',
     name: 'evanuateList',
     component: () => import('../views/teacher/EvanuateList.vue'),
-    meta: { title: '我的答疑' }
+    meta: { title: '咨询评价' }
+  },
+  {
+    path: '/infoSetting',
+    name: 'infoSetting',
+    component: () => import('../views/teacher/InfoSetting.vue'),
+    meta: { title: '信息设置' }
   }
 ]
 

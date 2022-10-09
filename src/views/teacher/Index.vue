@@ -56,7 +56,7 @@ export default {
         { text: "心理答疑", icon: "question-o", to: "/answerList" },
         { text: "我的答疑", icon: "comment-o", to: "/answerMy" },
         { text: "我的咨询评价", icon: "passed", to: "/evanuateList" },
-        { text: "个人信息设置", icon: "user-circle-o", to: "" },
+        { text: "个人信息设置", icon: "user-circle-o", to: "/infoSetting" },
       ],
     };
   },
