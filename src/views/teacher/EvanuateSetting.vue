@@ -81,7 +81,7 @@ export default {
   methods: {
     submit() {
       console.log(this.timeArea, this.type);
-      this.$goto('/teacher')
+      this.$goto("/teacher");
     },
     changeTimeArea() {
       this.timeTotal = 0;
