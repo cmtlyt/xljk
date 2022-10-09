@@ -5,6 +5,8 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+Vue.prototype.$goto = to => router.push(to)
+
 new Vue({
   router,
   store,

@@ -1,10 +1,17 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <style lang="scss">
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 16px;
+  background-color: #f4f4f4;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -24,5 +31,13 @@ nav {
       color: #42b983;
     }
   }
+}
+
+header,
+main,
+footer {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
 }
 </style>
