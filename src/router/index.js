@@ -96,6 +96,18 @@ const routes = [
             meta: { title: '首页' }
           },
           {
+            path: 'book',
+            name: 'book',
+            component: () => import('../views/parent/book/Index.vue'),
+            meta: { title: '深度好文' }
+          },
+          {
+            path: 'class',
+            name: 'class',
+            component: () => import('../views/parent/class/Index.vue'),
+            meta: { title: '在线课程' }
+          },
+          {
             path: 'mine',
             name: 'mine',
             component: () => import('../views/parent/mine/Index.vue'),
@@ -126,6 +138,18 @@ const routes = [
         name: 'bookDesc',
         component: () => import('../views/parent/book/Desc.vue'),
         meta: { title: '文章详情' }
+      },
+      {
+        path: 'watchHistory',
+        name: 'watchHistory',
+        component: () => import('../views/parent/mine/watch/History.vue'),
+        meta: { title: '观看记录' }
+      },
+      {
+        path: 'classDesc',
+        name: 'classDesc',
+        component: () => import('../views/parent/class/Desc.vue'),
+        meta: { title: '课程详情' }
       },
     ]
   }
