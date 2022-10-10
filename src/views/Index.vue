@@ -22,7 +22,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    & > div {
+    & > div:not(.navbar) {
       flex: 1;
     }
   }

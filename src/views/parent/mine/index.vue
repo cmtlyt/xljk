@@ -51,9 +51,9 @@ export default {
       messageTotal: "",
       gridList: [
         { text: "预约记录", icon: "todo-list-o", to: "../bookingHistory" },
-        { text: "问答记录", icon: "question-o", to: "../queryhistory" },
+        { text: "问答记录", icon: "question-o", to: "../queryHistory" },
         { text: "测评记录", icon: "records", to: "../reviewHistory" },
-        { text: "阅读记录", icon: "newspaper-o", to: "../readhistory" },
+        { text: "阅读记录", icon: "newspaper-o", to: "../readHistory" },
         { text: "观看记录", icon: "video-o", to: "../watchHistory" },
         { text: "个人信息", icon: "user-circle-o", to: "" },
       ],

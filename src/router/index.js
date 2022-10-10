@@ -31,7 +31,7 @@ const routes = [
       },
       {
         path: 'bookingHistory',
-        name: 'bookingHistory',
+        name: 'tbookingHistory',
         component: () => import('../views/teacher/BookingHistory.vue'),
         meta: { title: '预约记录' }
       },
@@ -150,6 +150,18 @@ const routes = [
         name: 'classDesc',
         component: () => import('../views/parent/class/Desc.vue'),
         meta: { title: '课程详情' }
+      },
+      {
+        path: 'bookingHistory',
+        name: 'bookingHistory',
+        component: () => import('../views/parent/mine/booking/History.vue'),
+        meta: { title: '预约记录' }
+      },
+      {
+        path: 'reviewHistory',
+        name: 'reviewHistory',
+        component: () => import('../views/parent/mine/review/History.vue'),
+        meta: { title: '测评记录' }
       },
     ]
   }

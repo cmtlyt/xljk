@@ -28,7 +28,7 @@
     <footer>
       <div class="btns">
         <van-button type="info" @click="cancel">取消预约</van-button>
-        <van-button type="info" @click="finish">已咨询</van-button>
+        <van-button type="info" @click="finish">评价</van-button>
       </div>
     </footer>
   </div>
@@ -50,7 +50,7 @@ export default {
       console.log("取消");
     },
     finish() {
-      console.log("结束");
+      console.log("评价");
     },
   },
   computed: {},
