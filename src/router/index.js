@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/', redirect: '/teacher' },
+  { path: '/', redirect: '/parent' },
   {
     path: '/messageList',
     name: 'messageList',
@@ -25,7 +25,7 @@ const routes = [
     children: [
       {
         path: 'mine',
-        name: 'mine',
+        name: 'tmine',
         component: () => import('../views/teacher/Index.vue'),
         meta: { title: '教师端主页' },
       },
@@ -79,17 +79,42 @@ const routes = [
     ]
   },
   {
-    path: 'parent',
-    name: '/parent',
+    path: '/parent',
+    name: 'parent',
     component: () => import('../views/Index.vue'),
-    redirect: '/parent/index',
+    redirect: '/parent/tab/mine',
     children: [
       {
-        path: 'index',
-        name: 'index',
-        component: () => import('../views/parent/index/Index.vue'),
-        meta: { title: '首页' }
-      }
+        path: 'tab',
+        name: 'tab',
+        component: () => import('../views/parent/Index.vue'),
+        children: [
+          {
+            path: 'index',
+            name: 'index',
+            component: () => import('../views/parent/index/Index.vue'),
+            meta: { title: '首页' }
+          },
+          {
+            path: 'mine',
+            name: 'mine',
+            component: () => import('../views/parent/mine/Index.vue'),
+            meta: { title: '我的' }
+          }
+        ]
+      },
+      {
+        path: 'queryHistory',
+        name: 'queryHistory',
+        component: () => import('../views/parent/mine/query/History.vue'),
+        meta: { title: '问答记录' }
+      },
+      {
+        path: 'queryDesc',
+        name: 'queryDesc',
+        component: () => import('../views/parent/index/query/Desc.vue'),
+        meta: { title: '心理答疑' }
+      },
     ]
   }
 ]

@@ -1,12 +1,6 @@
 <template>
   <div class="tabbar">
-    <van-tabbar
-      v-model="activeTabbat"
-      z-index="100"
-      route
-      placeholder
-      active-color="#0283fe"
-    >
+    <van-tabbar v-model="activeTabbat" z-index="100" placeholder>
       <van-tabbar-item
         v-for="(item, idx) in tabbarRole"
         :key="idx"
@@ -29,12 +23,12 @@ export default {
   props: [],
   data() {
     return {
-      activeTabbat: "",
+      activeTabbat: "index",
       tabbarRole: [
-        { name: "index", icon: "home-o", label: "首页", to: "" },
-        { name: "book", icon: "newspaper-o", label: "深度好文", to: "" },
-        { name: "class", icon: "video-o", label: "在线课程", to: "" },
-        { name: "mine", icon: "contact", label: "我的", to: "" },
+        { name: "index", icon: "home-o", label: "首页", to: "index" },
+        { name: "book", icon: "newspaper-o", label: "深度好文", to: "book" },
+        { name: "class", icon: "video-o", label: "在线课程", to: "class" },
+        { name: "mine", icon: "contact", label: "我的", to: "mine" },
       ],
     };
   },

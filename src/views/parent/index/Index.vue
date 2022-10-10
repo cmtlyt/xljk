@@ -1,10 +1,17 @@
 <template>
-  <div class="index"></div>
+  <div class="index">
+    <footer>
+      <cmtlyt-tabbar></cmtlyt-tabbar>
+    </footer>
+  </div>
 </template>
 
 <script>
+import CmtlytTabbar from '@/components/Tabbar.vue'
 export default {
-  components: {},
+  components: {
+    CmtlytTabbar
+  },
   props: [],
   data() {
     return {};
