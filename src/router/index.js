@@ -163,6 +163,24 @@ const routes = [
         component: () => import('../views/parent/mine/review/History.vue'),
         meta: { title: '测评记录' }
       },
+      {
+        path: 'reviewDesc',
+        name: 'reviewDesc',
+        component: () => import('../views/parent/index/review/Desc.vue'),
+        meta: { title: '心理测试' }
+      },
+      {
+        path: 'reviewSubject',
+        name: 'reviewSubject',
+        component: () => import('../views/parent/index/review/Subject.vue'),
+        meta: { title: '测试界面' }
+      },
+      {
+        path: 'reviewAnswer',
+        name: 'reviewAnswer',
+        component: () => import('../views/parent/index/review/Answer.vue'),
+        meta: { title: '测评报告' }
+      },
     ]
   }
 ]
