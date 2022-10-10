@@ -115,6 +115,18 @@ const routes = [
         component: () => import('../views/parent/index/query/Desc.vue'),
         meta: { title: '心理答疑' }
       },
+      {
+        path: 'readHistory',
+        name: 'readHistory',
+        component: () => import('../views/parent/mine/read/History.vue'),
+        meta: { title: '阅读记录' }
+      },
+      {
+        path: 'bookDesc',
+        name: 'bookDesc',
+        component: () => import('../views/parent/book/Desc.vue'),
+        meta: { title: '文章详情' }
+      },
     ]
   }
 ]

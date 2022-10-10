@@ -18,21 +18,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  & > div {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    & > div {
+      flex: 1;
+    }
+  }
 }
-
 nav {
   padding: 30px;
-
   a {
     font-weight: bold;
     color: #2c3e50;
-
     &.router-link-exact-active {
       color: #42b983;
     }
   }
 }
-
 header,
 main,
 footer,

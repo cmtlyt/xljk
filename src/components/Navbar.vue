@@ -43,5 +43,8 @@ export default {
   top: 0;
   z-index: 100;
   background-color: #fff;
+  ::v-deep(.van-nav-bar__title) {
+    font-size: $title-font-size;
+  }
 }
 </style>
