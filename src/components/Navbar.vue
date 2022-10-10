@@ -7,6 +7,7 @@
         v-if="role.rightArrow ?? true"
         name="chat"
         :badge="role.messageTotal ?? ''"
+        @click="$goto('/messageList')"
       />
     </div>
     <van-nav-bar
@@ -18,7 +19,7 @@
       @click-left="onClickLeft"
       @click-right="onClickRight(role.rightProp)"
     >
-      <slot></slot>
+      <template #right><slot name="right"></slot></template>
     </van-nav-bar>
   </div>
 </template>
@@ -59,6 +60,9 @@ export default {
   background-color: #fff;
   ::v-deep(.van-nav-bar__title) {
     font-size: $title-font-size;
+  }
+  ::v-deep(.van-nav-bar__right):has(.van-icon) {
+    font-size: 1.5em;
   }
   .search-navbar {
     display: flex;
