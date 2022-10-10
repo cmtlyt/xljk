@@ -82,7 +82,7 @@ const routes = [
     path: '/parent',
     name: 'parent',
     component: () => import('../views/Index.vue'),
-    redirect: '/parent/tab/mine',
+    redirect: '/parent/tab/index',
     children: [
       {
         path: 'tab',
@@ -115,72 +115,75 @@ const routes = [
           }
         ]
       },
-      {
-        path: 'queryHistory',
-        name: 'queryHistory',
-        component: () => import('../views/parent/mine/query/History.vue'),
-        meta: { title: '问答记录' }
-      },
-      {
-        path: 'queryDesc',
-        name: 'queryDesc',
-        component: () => import('../views/parent/index/query/Desc.vue'),
-        meta: { title: '心理答疑' }
-      },
-      {
-        path: 'readHistory',
-        name: 'readHistory',
-        component: () => import('../views/parent/mine/read/History.vue'),
-        meta: { title: '阅读记录' }
-      },
-      {
-        path: 'bookDesc',
-        name: 'bookDesc',
-        component: () => import('../views/parent/book/Desc.vue'),
-        meta: { title: '文章详情' }
-      },
-      {
-        path: 'watchHistory',
-        name: 'watchHistory',
-        component: () => import('../views/parent/mine/watch/History.vue'),
-        meta: { title: '观看记录' }
-      },
-      {
-        path: 'classDesc',
-        name: 'classDesc',
-        component: () => import('../views/parent/class/Desc.vue'),
-        meta: { title: '课程详情' }
-      },
-      {
-        path: 'bookingHistory',
-        name: 'bookingHistory',
-        component: () => import('../views/parent/mine/booking/History.vue'),
-        meta: { title: '预约记录' }
-      },
-      {
-        path: 'reviewHistory',
-        name: 'reviewHistory',
-        component: () => import('../views/parent/mine/review/History.vue'),
-        meta: { title: '测评记录' }
-      },
-      {
-        path: 'reviewDesc',
-        name: 'reviewDesc',
-        component: () => import('../views/parent/index/review/Desc.vue'),
-        meta: { title: '心理测试' }
-      },
-      {
-        path: 'reviewSubject',
-        name: 'reviewSubject',
-        component: () => import('../views/parent/index/review/Subject.vue'),
-        meta: { title: '测试界面' }
-      },
-      {
-        path: 'reviewAnswer',
-        name: 'reviewAnswer',
-        component: () => import('../views/parent/index/review/Answer.vue'),
-        meta: { title: '测评报告' }
-      },
+      ...[
+        {
+          path: 'queryHistory',
+          name: 'queryHistory',
+          component: () => import('../views/parent/mine/query/History.vue'),
+          meta: { title: '问答记录' }
+        },
+        {
+          path: 'queryDesc',
+          name: 'queryDesc',
+          component: () => import('../views/parent/index/query/Desc.vue'),
+          meta: { title: '心理答疑' }
+        },
+        {
+          path: 'readHistory',
+          name: 'readHistory',
+          component: () => import('../views/parent/mine/read/History.vue'),
+          meta: { title: '阅读记录' }
+        },
+        {
+          path: 'bookDesc',
+          name: 'bookDesc',
+          component: () => import('../views/parent/book/Desc.vue'),
+          meta: { title: '文章详情' }
+        },
+        {
+          path: 'watchHistory',
+          name: 'watchHistory',
+          component: () => import('../views/parent/mine/watch/History.vue'),
+          meta: { title: '观看记录' }
+        },
+        {
+          path: 'classDesc',
+          name: 'classDesc',
+          component: () => import('../views/parent/class/Desc.vue'),
+          meta: { title: '课程详情' }
+        },
+        {
+          path: 'bookingHistory',
+          name: 'bookingHistory',
+          component: () => import('../views/parent/mine/booking/History.vue'),
+          meta: { title: '预约记录' }
+        },
+        {
+          path: 'reviewHistory',
+          name: 'reviewHistory',
+          component: () => import('../views/parent/mine/review/History.vue'),
+          meta: { title: '测评记录' }
+        },
+        {
+          path: 'reviewDesc',
+          name: 'reviewDesc',
+          component: () => import('../views/parent/index/review/Desc.vue'),
+          meta: { title: '心理测试' }
+        },
+        {
+          path: 'reviewSubject',
+          name: 'reviewSubject',
+          component: () => import('../views/parent/index/review/Subject.vue'),
+          meta: { title: '测试界面' }
+        },
+        {
+          path: 'reviewAnswer',
+          name: 'reviewAnswer',
+          component: () => import('../views/parent/index/review/Answer.vue'),
+          meta: { title: '测评报告' }
+        },
+      ],
+      ...[]
     ]
   }
 ]

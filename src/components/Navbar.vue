@@ -1,6 +1,16 @@
 <template>
   <div class="navbar">
+    <div v-if="role.type == 'search'" class="search-navbar">
+      <van-icon v-if="role.leftArrow" name="arrow-left" />
+      <van-search v-model="searchValue" placeholder="请输入搜索关键词" />
+      <van-icon
+        v-if="role.rightArrow ?? true"
+        name="chat"
+        :badge="role.messageTotal ?? ''"
+      />
+    </div>
     <van-nav-bar
+      v-else
       :title="role.title"
       :left-text="role.leftText || ''"
       :right-text="role.rightText || ''"
@@ -14,14 +24,18 @@
 </template>
 
 <script>
-import { NavBar } from "vant";
+import { NavBar, Search, Icon } from "vant";
 export default {
   components: {
     [NavBar.name]: NavBar,
+    [Search.name]: Search,
+    [Icon.name]: Icon,
   },
   props: ["role"],
   data() {
-    return {};
+    return {
+      searchValue: "",
+    };
   },
   methods: {
     onClickLeft() {
@@ -45,6 +59,20 @@ export default {
   background-color: #fff;
   ::v-deep(.van-nav-bar__title) {
     font-size: $title-font-size;
+  }
+  .search-navbar {
+    display: flex;
+    align-items: center;
+    gap: $main-gap;
+    padding: 0 10px;
+    .van-search {
+      margin: 0;
+      padding: 10px 0;
+      flex: 1;
+    }
+    .van-icon {
+      font-size: 1.5em;
+    }
   }
 }
 </style>
