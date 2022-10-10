@@ -25,7 +25,7 @@ export default {
   methods: {
     submit() {
       console.log(this.answer);
-      this.$goto("/answerList");
+      this.$goto("answerList");
     },
   },
   computed: {},

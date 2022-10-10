@@ -51,12 +51,12 @@ export default {
       username: "张老师",
       messageTotal: "",
       gridList: [
-        { text: "咨询预约设置", icon: "chat-o", to: "/evanuateSetting" },
-        { text: "预约记录", icon: "todo-list-o", to: "/bookingHistory" },
-        { text: "心理答疑", icon: "question-o", to: "/answerList" },
-        { text: "我的答疑", icon: "comment-o", to: "/answerMy" },
-        { text: "我的咨询评价", icon: "passed", to: "/evanuateList" },
-        { text: "个人信息设置", icon: "user-circle-o", to: "/infoSetting" },
+        { text: "咨询预约设置", icon: "chat-o", to: "evanuateSetting" },
+        { text: "预约记录", icon: "todo-list-o", to: "bookingHistory" },
+        { text: "心理答疑", icon: "question-o", to: "answerList" },
+        { text: "我的答疑", icon: "comment-o", to: "answerMy" },
+        { text: "我的咨询评价", icon: "passed", to: "evanuateList" },
+        { text: "个人信息设置", icon: "user-circle-o", to: "infoSetting" },
       ],
     };
   },

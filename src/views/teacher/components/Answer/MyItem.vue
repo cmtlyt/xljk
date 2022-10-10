@@ -48,7 +48,7 @@ export default {
   },
   methods: {
     goAnswer() {
-      this.$goto("/answerDesc");
+      this.$goto("answerDesc");
     },
   },
   computed: {},

@@ -205,6 +205,10 @@ export default {
             border-radius: 0;
             border: #e1e1e1 solid 1px;
           }
+          .label {
+            font-size: $desc-font-size;
+            color: #000;
+          }
         }
       }
     }

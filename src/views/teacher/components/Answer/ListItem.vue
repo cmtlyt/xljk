@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     goReply() {
-      this.$goto("/answerDesc");
+      this.$goto("answerDesc");
     },
   },
   computed: {},
