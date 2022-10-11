@@ -206,13 +206,31 @@ const routes = [
           path: 'review',
           name: 'review',
           component: () => import('../views/parent/index/review/Index.vue'),
-          meta: { title: '放松解压' }
+          meta: { title: '心理测评' }
         },
         {
           path: 'relaxDesc',
           name: 'relaxDesc',
           component: () => import('../views/parent/index/relax/Desc.vue'),
           meta: { title: '放松解压' }
+        },
+        {
+          path: 'booking',
+          name: 'booking',
+          component: () => import('../views/parent/index/booking/Index.vue'),
+          meta: { title: '咨询预约' }
+        },
+        {
+          path: 'teacherDesc',
+          name: 'teacherDesc',
+          component: () => import('../views/parent/index/booking/TeacherDesc.vue'),
+          meta: { title: '教师详情' }
+        },
+        {
+          path: 'checkBooking',
+          name: 'checkBooking',
+          component: () => import('../views/parent/index/booking/Booking.vue'),
+          meta: { title: '预约' }
         },
       ]
     ]

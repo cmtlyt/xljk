@@ -1,25 +1,27 @@
 <template>
   <div class="book-desc">
     <cmtlyt-navbar :role="navbarRole"></cmtlyt-navbar>
-    <header>
-      <div class="title">{{ title }}</div>
-      <div class="info">
-        <div class="author">作者: {{ author }}</div>
-        <div class="date">{{ date }}</div>
-      </div>
-    </header>
-    <main>{{ content }}</main>
-    <footer>
-      <div class="tools">
-        <div class="share" @click="share"><van-icon name="share-o" /></div>
-        <div class="star" @click="star">
-          <van-icon name="star-o" />{{ starTotal }}
+    <div class="content">
+      <header>
+        <div class="title">{{ title }}</div>
+        <div class="info">
+          <div class="author">作者: {{ author }}</div>
+          <div class="date">{{ date }}</div>
         </div>
-        <div class="like" @click="like">
-          <van-icon name="like-o" />{{ likeTotal }}
+      </header>
+      <main>{{ content }}</main>
+      <footer>
+        <div class="tools">
+          <div class="share" @click="share"><van-icon name="share-o" /></div>
+          <div class="star" @click="star">
+            <van-icon name="star-o" />{{ starTotal }}
+          </div>
+          <div class="like" @click="like">
+            <van-icon name="like-o" />{{ likeTotal }}
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </div>
 </template>
 
@@ -66,7 +68,9 @@ export default {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  padding: $main-padding;
+  .content {
+    padding: $main-padding;
+  }
   header {
     padding: 3rem 0;
     display: flex;

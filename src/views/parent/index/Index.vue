@@ -114,11 +114,14 @@ export default {
       const pathDict = {
         心理答疑: "../queryList",
         放松解压: "../relax",
+        咨询预约: "../booking",
+        心理测评: "../review",
       };
+      const path = pathDict[target];
+      if (!path) return;
       this.$goto(pathDict[target]);
     },
     goHot(path) {
-      console.log(path);
       if (!path) return;
       this.$goto(path);
     },

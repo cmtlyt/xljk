@@ -1,8 +1,11 @@
 <template>
   <div class="navbar">
     <div v-if="role.type == 'search'" class="search-navbar">
-      <van-icon v-if="role.leftArrow" name="arrow-left" />
-      <van-search v-model="searchValue" placeholder="请输入搜索关键词" />
+      <van-icon v-if="role.leftArrow" name="arrow-left" @click="onClickLeft" />
+      <van-search
+        v-model="searchValue"
+        :placeholder="role.placeholder ?? '请输入搜索关键词'"
+      />
       <van-icon
         v-if="role.rightArrow ?? true"
         name="chat"

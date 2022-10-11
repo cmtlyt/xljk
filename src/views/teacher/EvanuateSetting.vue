@@ -114,8 +114,9 @@ export default {
   created() {
     const weekList = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
     for (let i = 0; i < 11; i++) {
-      const date = this.getDate("", i).split("-").splice(1).join("-");
+      let date = this.getDate("", i);
       const week = i ? weekList[new Date(date).getDay()] : "今天";
+      date = date.split("-").splice(1).join("-");
       const res = `${week}<br>${date}`;
       this.dates.push(res);
       this.timeArea.push([]);
