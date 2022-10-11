@@ -7,6 +7,7 @@
           v-for="(item, idx) in sideList"
           :key="idx"
           :title="item"
+          color=""
         />
       </van-sidebar>
       <div class="content">
@@ -83,6 +84,9 @@ export default {
         &::before {
           height: 100%;
         }
+      }
+      ::v-deep(.van-sidebar-item--select::before) {
+        background-color: #0283fe;
       }
     }
     .content {
