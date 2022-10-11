@@ -10,7 +10,7 @@
       </template>
     </cmtlyt-navbar>
     <div class="content">
-      <van-tabs v-model="activeTab" color="#0283fe">
+      <van-tabs v-model="activeTab" color="#0283fe" swipeable>
         <van-tab
           v-for="(item, idx) in tabList"
           :key="idx"
