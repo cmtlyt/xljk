@@ -204,9 +204,12 @@ export default {
       ::v-deep(.van-tab--active) {
         color: $main-color;
       }
+      ::v-deep(.van-tabs__line){
+        bottom: 20px;
+      }
     }
     .history-item + .history-item {
-      border-top: #00000030 solid 1px;
+      border-top: #00000010 solid 1px;
     }
   }
 }

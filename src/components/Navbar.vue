@@ -63,6 +63,9 @@ export default {
   }
   ::v-deep(.van-nav-bar__right):has(.van-icon) {
     font-size: 1.5em;
+    .van-icon {
+      color: #000;
+    }
   }
   .search-navbar {
     display: flex;

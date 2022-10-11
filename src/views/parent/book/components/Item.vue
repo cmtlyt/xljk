@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     goDesc() {
-      this.$goto("bookDesc");
+      this.$goto("../bookDesc");
     },
   },
   computed: {},
@@ -39,8 +39,7 @@ export default {
 
 <style lang="scss" scoped>
 .history-item {
-  padding: $main-padding;
-  // background-color: #fff;
+  padding: 2rem $main-padding;
   border-radius: $main-radius;
   main {
     display: flex;
