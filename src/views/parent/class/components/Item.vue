@@ -62,7 +62,7 @@ export default {
         -webkit-box-orient: vertical;
         overflow: hidden;
         height: 1.5em;
-        font-size: $title-font-size;
+        font-size: $text-font-size;
         text-align: left;
       }
       .info {
