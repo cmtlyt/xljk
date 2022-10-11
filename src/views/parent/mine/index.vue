@@ -20,7 +20,7 @@
       </div>
     </header>
     <main>
-      <van-grid>
+      <van-grid :border="false">
         <van-grid-item
           v-for="(item, idx) in gridList"
           :key="idx"
