@@ -343,7 +343,6 @@ export default {
       div {
         display: flex;
         flex-direction: column;
-        // justify-content: space-between;
         gap: 1.5rem;
         align-items: center;
         font-size: $title-font-size;
@@ -543,6 +542,7 @@ export default {
     .van-goods-action {
       padding: 0 1rem 0 3rem;
       gap: 10px;
+      z-index: 100;
     }
   }
 }
