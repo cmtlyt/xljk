@@ -51,7 +51,7 @@
         <section>
           <div class="title">
             热门测评
-            <div class="more">更多</div>
+            <div class="more" @click="$goto('../review')">更多</div>
           </div>
           <div class="content">
             <ul>
@@ -97,9 +97,9 @@ export default {
         "https://img01.yzcdn.cn/vant/apple-2.jpg",
       ],
       hotReviewList: [
-        { title: "疲劳测试", total: "121", to: "", src: "" },
-        { title: "性格测试", total: "121", to: "", src: "" },
-        { title: "心理测试", total: "121", to: "", src: "" },
+        { title: "疲劳测试", total: "121", to: "../reviewDesc", src: "" },
+        { title: "性格测试", total: "121", to: "../reviewDesc", src: "" },
+        { title: "心理测试", total: "121", to: "../reviewDesc", src: "" },
       ],
     };
   },

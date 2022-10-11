@@ -203,6 +203,12 @@ const routes = [
           meta: { title: '放松解压' }
         },
         {
+          path: 'review',
+          name: 'review',
+          component: () => import('../views/parent/index/review/Index.vue'),
+          meta: { title: '放松解压' }
+        },
+        {
           path: 'relaxDesc',
           name: 'relaxDesc',
           component: () => import('../views/parent/index/relax/Desc.vue'),
