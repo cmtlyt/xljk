@@ -27,7 +27,7 @@
         <section>
           <div class="title">
             放松解压
-            <div class="more">更多</div>
+            <div class="more" @click="$goto('../relax')">更多</div>
           </div>
           <div class="btns" @click="goto">
             <div class="btn">
@@ -106,13 +106,16 @@ export default {
   methods: {
     goto(e) {
       let target;
-      if ([...e.target.classList].includes("btn")) {
+      if ([...(e.target.classList || "")].includes("btn")) {
         target = e.target.innerText.trim();
-      } else if ([...e.target.parentNode.classList].includes("btn")) {
+      } else if ([...(e.target.parentNode.classList || "")].includes("btn")) {
         target = e.target.parentNode.innerText.trim();
       }
-      console.log(target);
-      if (target == "心理答疑") this.$goto("../queryList");
+      const pathDict = {
+        心理答疑: "../queryList",
+        放松解压: "../relax",
+      };
+      this.$goto(pathDict[target]);
     },
     goHot(path) {
       console.log(path);

@@ -196,6 +196,18 @@ const routes = [
           component: () => import('../views/parent/index/query/Query.vue'),
           meta: { title: '我要提问' }
         },
+        {
+          path: 'relax',
+          name: 'relax',
+          component: () => import('../views/parent/index/relax/Index.vue'),
+          meta: { title: '放松解压' }
+        },
+        {
+          path: 'relaxDesc',
+          name: 'relaxDesc',
+          component: () => import('../views/parent/index/relax/Desc.vue'),
+          meta: { title: '放松解压' }
+        },
       ]
     ]
   }
