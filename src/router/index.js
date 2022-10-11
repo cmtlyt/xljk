@@ -183,7 +183,20 @@ const routes = [
           meta: { title: '测评报告' }
         },
       ],
-      ...[]
+      ...[
+        {
+          path: 'queryList',
+          name: 'queryList',
+          component: () => import('../views/parent/index/query/Index.vue'),
+          meta: { title: '心理答疑' }
+        },
+        {
+          path: 'query',
+          name: 'query',
+          component: () => import('../views/parent/index/query/Query.vue'),
+          meta: { title: '我要提问' }
+        },
+      ]
     ]
   }
 ]

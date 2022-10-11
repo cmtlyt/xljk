@@ -67,6 +67,13 @@ export default {
       color: #000;
     }
   }
+  ::v-deep(.van-nav-bar__right) span {
+    display: flex;
+    padding: 3px 7px;
+    background-color: $main-color;
+    color: #fff;
+    border-radius: 5px;
+  }
   .search-navbar {
     display: flex;
     align-items: center;

@@ -112,6 +112,7 @@ export default {
         target = e.target.parentNode.innerText.trim();
       }
       console.log(target);
+      if (target == "心理答疑") this.$goto("../queryList");
     },
     goHot(path) {
       console.log(path);
