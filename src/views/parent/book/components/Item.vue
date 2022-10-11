@@ -40,7 +40,6 @@ export default {
 <style lang="scss" scoped>
 .history-item {
   padding: 2rem $main-padding;
-  border-radius: $main-radius;
   main {
     display: flex;
     gap: $main-gap;
