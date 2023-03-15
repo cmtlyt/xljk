@@ -58,7 +58,7 @@ export default {
         -webkit-box-orient: vertical;
         overflow: hidden;
         height: 2.5em;
-        font-size: $title-font-size;
+        font-size: $big-title-font-size;
         text-align: left;
       }
       .date {

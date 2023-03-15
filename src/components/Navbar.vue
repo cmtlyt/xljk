@@ -64,8 +64,10 @@ export default {
   ::v-deep(.van-nav-bar__title) {
     font-size: $title-font-size;
   }
-  ::v-deep(.van-icon) {
+  ::v-deep(.van-nav-bar__right):has(.van-icon) {
     font-size: 1.5em;
+  }
+  ::v-deep(.van-icon) {
     color: #000;
   }
   ::v-deep(.van-nav-bar__right) span {

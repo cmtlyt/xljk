@@ -60,7 +60,7 @@ export default {
         -webkit-box-orient: vertical;
         overflow: hidden;
         height: 1.5em;
-        font-size: $title-font-size;
+        font-size: $big-title-font-size;
       }
       .author,
       .date {
